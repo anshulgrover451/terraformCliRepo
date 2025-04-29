@@ -31,6 +31,7 @@ locals {
   }
 }
 
+/*
 module "main" {
   for_each = local.vpc
   source = "app.terraform.io/Terraform-Cloud-Private/myproject/aws"
@@ -38,4 +39,4 @@ module "main" {
   vpc_cidr    = each.value.vpc_cidr
   subnet_cidr = values(each.value.subnets)
   azs         = keys(each.value.subnets)
-}
+} */
